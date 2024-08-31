@@ -11,6 +11,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <title>Pet Details App</title>
+        <meta name="description" content="Discover amazing pet breeds!" />
+        <meta property="og:title" content="Pet Details App" />
+        <meta
+          property="og:description"
+          content="Discover amazing pet breeds!"
+        />
+      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   );
