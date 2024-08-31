@@ -1,0 +1,96 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 16px; /* Space between image and info */
+  border-radius: 12px;
+}
+
+.images {
+  display: flex;
+  width: 100%; /* Adjust width to fit the container */
+  transition: transform 0.5s ease-in-out;
+}
+
+.image {
+  width: 100%; /* Adjust width to fit the card */
+  height: auto; /* Auto height to maintain aspect ratio */
+  max-height: 400px; /* Limit height to prevent overflow */
+  object-fit: cover;
+  filter: brightness(0.9); /* Slightly darken the image */
+  transition: filter 0.3s ease, transform 0.3s ease;
+  padding: 8px; /* Padding around the image */
+  border-radius: 22px; /* Match home page image styling */
+}
+
+.image:hover {
+  filter: brightness(1); /* Brighten on hover */
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.dots {
+  position: absolute;
+  bottom: 16px; /* Move dots to the bottom of the image */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2; /* Ensure dots appear above the image */
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.active {
+  background-color: #ff385c;
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque on hover */
+}
+
+.info h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.info p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 1200px) {
+  .image {
+    max-height: 300px; /* Adjust height for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    max-height: 250px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .image {
+    max-height: 200px; /* Adjust height for very small screens */
+  }
+}

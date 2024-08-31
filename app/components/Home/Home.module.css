@@ -1,0 +1,101 @@
+.stickyHeader {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  height: 35px;
+  width: 35px;
+  position: absolute; 
+  left: 0px;
+}
+
+.appName {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff385c;
+  left: 45px;
+  position: absolute; 
+  display: block; /* Show by default */
+}
+
+.searchSection {
+  max-width: 500px;
+  width: 100%;
+}
+
+.welcomeText {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 960px; /* Fixed width to accommodate 3 cards in a row */
+  margin: 0 auto; /* Center the container */
+  padding: 16px; /* Padding around the container */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 16px;
+  justify-items: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  padding: 10px 15px;
+  align-self: center;
+}
+
+@media (max-width: 1030px) {
+  .searchSection {
+    max-width: 290px;
+  }
+}
+
+@media (max-width: 685px) {
+  .appName {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns for smaller viewports */
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr); /* Adjust to 1 column for mobile viewports */
+  }
+}

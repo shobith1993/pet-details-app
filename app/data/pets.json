@@ -1,0 +1,11 @@
+{
+    "welcomeText": "Hello!",
+    "cat": {
+        "welcomeMessage": "Discover amazing cat breeds!",
+        "breedsFetchUrl": "https://api.thecatapi.com/v1/images/search?limit=5&has_breeds=1&mime_types=jpg"
+    },
+    "dog": {
+        "welcomeMessage": "Discover amazing dog breeds!",
+        "breedsFetchUrl": "https://api.thedogapi.com/v1/images/search?limit=5&has_breeds=1&mime_types=jpg"
+    }
+}
