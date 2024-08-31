@@ -14,14 +14,14 @@
   height: 35px;
   width: 35px;
   position: absolute; 
-  left: 0px;
+  left: 10px;
 }
 
 .appName {
   font-size: 24px;
   font-weight: bold;
   color: #ff385c;
-  left: 45px;
+  left: 47px;
   position: absolute; 
   display: block;
 }
