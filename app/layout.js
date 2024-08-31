@@ -20,6 +20,10 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="Discover amazing pet breeds!"
         />
+        <meta
+          name="google-site-verification"
+          content="5IXIV3dqgIqQTekgL_7EMdaOdLV3pikIun5VK8N-Vxs"
+        />
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
