@@ -7,16 +7,16 @@ const BreedInfo = ({ breedInfo }) => {
       <h1>{breedInfo.name}</h1>
       <p>{breedInfo.description}</p>
       <p>
-        <strong>Origin:</strong> {breedInfo.origin}
+        <strong>Origin:</strong> {breedInfo?.origin}
       </p>
       <p>
-        <strong>Life Span:</strong> {breedInfo.life_span} years
+        <strong>Life Span:</strong> {breedInfo?.life_span} years
       </p>
       <p>
-        <strong>Temperament:</strong> {breedInfo.temperament}
+        <strong>Temperament:</strong> {breedInfo?.temperament}
       </p>
       <p>
-        <strong>Weight:</strong> {breedInfo.weight.metric} kg
+        <strong>Weight:</strong> {breedInfo?.weight?.metric} kg
       </p>
     </div>
   );

@@ -15,46 +15,46 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  margin-bottom: 16px; /* Space between image and info */
+  margin-bottom: 16px; 
   border-radius: 12px;
 }
 
 .images {
   display: flex;
-  width: 100%; /* Adjust width to fit the container */
+  width: 100%; 
   transition: transform 0.5s ease-in-out;
 }
 
 .image {
-  width: 100%; /* Adjust width to fit the card */
-  height: auto; /* Auto height to maintain aspect ratio */
-  max-height: 400px; /* Limit height to prevent overflow */
+  width: 100%;
+  height: auto; 
+  max-height: 400px; 
   object-fit: cover;
-  filter: brightness(0.9); /* Slightly darken the image */
+  filter: brightness(0.9);
   transition: filter 0.3s ease, transform 0.3s ease;
-  padding: 8px; /* Padding around the image */
-  border-radius: 22px; /* Match home page image styling */
+  padding: 8px; 
+  border-radius: 22px; 
 }
 
 .image:hover {
-  filter: brightness(1); /* Brighten on hover */
-  transform: scale(1.05); /* Zoom effect on hover */
+  filter: brightness(1); 
+  transform: scale(1.05); 
 }
 
 .dots {
   position: absolute;
-  bottom: 16px; /* Move dots to the bottom of the image */
+  bottom: 16px; 
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   gap: 8px;
-  z-index: 2; /* Ensure dots appear above the image */
+  z-index: 2; 
 }
 
 .dot {
   width: 12px;
   height: 12px;
-  background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -65,7 +65,7 @@
 }
 
 .dot:hover {
-  background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque on hover */
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .info h1 {
@@ -79,18 +79,18 @@
 
 @media (max-width: 1200px) {
   .image {
-    max-height: 300px; /* Adjust height for medium screens */
+    max-height: 300px; 
   }
 }
 
 @media (max-width: 768px) {
   .image {
-    max-height: 250px; /* Adjust height for smaller screens */
+    max-height: 250px; 
   }
 }
 
 @media (max-width: 480px) {
   .image {
-    max-height: 200px; /* Adjust height for very small screens */
+    max-height: 200px; 
   }
 }

@@ -23,7 +23,7 @@
   color: #ff385c;
   left: 45px;
   position: absolute; 
-  display: block; /* Show by default */
+  display: block;
 }
 
 .searchSection {
@@ -37,14 +37,14 @@
 }
 
 .container {
-  max-width: 960px; /* Fixed width to accommodate 3 cards in a row */
-  margin: 0 auto; /* Center the container */
-  padding: 16px; /* Padding around the container */
+  max-width: 960px; 
+  margin: 0 auto; 
+  padding: 16px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 16px;
   justify-items: center;
 }
@@ -90,12 +90,12 @@
 
 @media (max-width: 960px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns for smaller viewports */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 640px) {
   .grid {
-    grid-template-columns: repeat(1, 1fr); /* Adjust to 1 column for mobile viewports */
+    grid-template-columns: repeat(1, 1fr);
   }
 }

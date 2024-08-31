@@ -1,17 +1,17 @@
 import winston from "winston";
 
-const logger = winston.createLogger({
-  level: "info",
-  format: winston.format.combine(
-    winston.format.timestamp(),
-    winston.format.json()
+const { createLogger, format, transports } = winston;
+
+const logger = createLogger({
+  level: process.env.NODE_ENV === "production" ? "info" : "debug",
+  format: format.combine(
+    format.timestamp(),
+    format.json(),
+    format.prettyPrint()
   ),
   transports: [
-    new winston.transports.Console({
-      format: winston.format.combine(
-        winston.format.colorize(),
-        winston.format.simple()
-      ),
+    new transports.Console({
+      format: format.combine(format.colorize(), format.simple()),
     }),
   ],
 });

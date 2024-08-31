@@ -7,38 +7,13 @@ import Pagination from "./Pagination";
 import Loader from "../Loader/Loader";
 import styles from "./Home.module.css";
 
-const Home = (props) => {
-  const [selectedPetType, setSelectedPetType] = useState(props.petType);
-  const [allBreeds, setAllBreeds] = useState([]);
+const Home = ({ petType, allBreeds }) => {
+  const [selectedPetType] = useState(petType);
   const [filteredBreeds, setFilteredBreeds] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
-  const [loading, setLoading] = useState(true);
   const [selectedBreed, setSelectedBreed] = useState(null);
   const itemsPerPage = 9;
-
-  useEffect(() => {
-    const fetchBreeds = async () => {
-      setLoading(true);
-      try {
-        const response = await fetch(
-          `https://api.the${selectedPetType}api.com/v1/breeds`
-        );
-        const data = await response.json();
-        setAllBreeds(data);
-        setFilteredBreeds(
-          selectedBreed
-            ? data.filter((breed) => breed.id === selectedBreed.value)
-            : data
-        );
-        setTotalPages(Math.ceil(data.length / itemsPerPage));
-      } catch (error) {
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchBreeds();
-  }, []);
 
   useEffect(() => {
     if (selectedBreed) {
@@ -80,7 +55,7 @@ const Home = (props) => {
       />
       <WelcomeText petType={selectedPetType} />
       <div className={styles.container}>
-        {loading ? (
+        {filteredBreeds.length === 0 ? (
           <Loader />
         ) : (
           <>
