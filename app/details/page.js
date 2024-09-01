@@ -1,4 +1,3 @@
-// app/details/page.js
 import PetDetails from "../components/PetDetails/PetDetails";
 import petData from "../data/pets.json";
 import { fetchData } from "../utils/useFetch";

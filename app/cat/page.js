@@ -1,4 +1,3 @@
-// app/cat/page.js
 import Home from "../components/Home/Home";
 import { fetchData } from "../utils/useFetch";
 
