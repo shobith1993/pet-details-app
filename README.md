@@ -17,7 +17,8 @@ Check out the live application deployed on Vercel: [Pet Details App](https://pet
 ## Screenshots 📸
 
 ### Logging Details from Vercel
-_(Screenshot coming soon)_
+<img width="1791" alt="image" src="https://github.com/user-attachments/assets/1f1f94b9-0848-4f8f-a42c-9a61e6e7c0ec">
+
 
 ## Getting Started 🛠️
 
