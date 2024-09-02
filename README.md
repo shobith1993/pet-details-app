@@ -14,11 +14,16 @@ Welcome to the **Pet Details App**, your go-to resource for discovering various 
 
 Check out the live application deployed on Vercel: [Pet Details App](https://pet-details-app.vercel.app/)
 
-## Screenshots 📸
+## API Key Setup 🔑
 
-### Logging Details from Vercel
-<img width="1791" alt="image" src="https://github.com/user-attachments/assets/1f1f94b9-0848-4f8f-a42c-9a61e6e7c0ec">
+To run this project locally, you'll need an API key for The Cat API. Follow these steps:
 
+1. **Get the API Key**:
+
+   - Visit [The Cat API](https://thecatapi.com/) to sign up and obtain your API key.
+
+2. **Store the API Key Locally**:
+   - Create a `.env.local` file in the root of your project and add the X_API_KEY ans save it.
 
 ## Getting Started 🛠️
 
@@ -30,6 +35,16 @@ cd pet-details-app
 npm install
 npm run dev
 ```
+
+## Unit Tests 🧪
+
+The application includes unit tests to ensure the correctness of key functionalities. Tests cover components like `HomeHeader`, `Pagination`, and utility functions like `useFetch`.
+
+## Screenshots 📸
+
+### Logging Details from Vercel
+
+<img width="1791" alt="image" src="https://github.com/user-attachments/assets/1f1f94b9-0848-4f8f-a42c-9a61e6e7c0ec">
 
 ## Future Enhancements 🌱
 
