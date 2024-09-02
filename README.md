@@ -14,16 +14,6 @@ Welcome to the **Pet Details App**, your go-to resource for discovering various 
 
 Check out the live application deployed on Vercel: [Pet Details App](https://pet-details-app.vercel.app/)
 
-## API Key Setup 🔑
-
-To run this project locally, you'll need an API key for The Cat API. Follow these steps:
-
-1. **Get the API Key**:
-
-   - Visit [The Cat API](https://thecatapi.com/) to sign up and obtain your API key.
-
-2. **Store the API Key Locally**:
-   - Create a `.env.local` file in the root of your project and add the X_API_KEY ans save it.
 
 ## Getting Started 🛠️
 
@@ -32,6 +22,22 @@ To run this project locally:
 ```bash
 git clone https://github.com/your-username/pet-details-app.git
 cd pet-details-app
+```
+
+### API Key Setup 🔑
+
+To run this project locally, you'll need an API key for The Cat API. Follow these steps:
+
+1. **Get the API Key**:
+
+   - Visit [The Cat API](https://thecatapi.com/) to sign up and obtain your API key.
+
+2. **Store the API Key Locally**:
+   - Create a `.env.local` file in the root of your project and add the `X_API_KEY` and save it.
+   - Run the below:
+
+
+```bash
 npm install
 npm run dev
 ```
