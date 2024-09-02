@@ -9,7 +9,8 @@ Welcome to the **Pet Details App**, your go-to resource for discovering various 
 - **Search & Pagination**: Quickly find your favorite breed with a user-friendly search function and navigate through results with intuitive pagination.
 - **Agnostic Logging System**: Integrated with Winston, the app's logging mechanism is designed to be agnostic. This means it can seamlessly work with any logger library you choose to implement.
 - **Error Handling**: Graceful error handling ensures a smooth user experience, even when things go wrong.
-
+- **SEO & Server-Side Rendering**: The application is optimized for search engines and leverages server-side rendering to ensure fast load times and better SEO performance.
+- 
 ## Live Demo 🚀
 
 Check out the live application deployed on Vercel: [Pet Details App](https://pet-details-app.vercel.app/)
